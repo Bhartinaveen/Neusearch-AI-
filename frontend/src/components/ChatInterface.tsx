@@ -60,7 +60,7 @@ export default function ChatInterface() {
         setLoading(true)
 
         try {
-            const res = await axios.post('http://localhost:8000/chat', { query: textToSend })
+            const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/chat`, { query: textToSend })
             setMessages(prev => [...prev, {
                 role: 'bot',
                 content: res.data.response,

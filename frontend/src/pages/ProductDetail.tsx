@@ -21,7 +21,7 @@ export default function ProductDetail() {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/products/${id}`)
+        axios.get(`${import.meta.env.VITE_BACKEND_URL}/products/${id}`)
             .then(res => setProduct(res.data))
             .catch(err => console.error(err))
             .finally(() => setLoading(false))

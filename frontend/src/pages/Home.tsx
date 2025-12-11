@@ -16,7 +16,7 @@ export default function Home() {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        axios.get('http://localhost:8000/products')
+        axios.get(`${import.meta.env.VITE_BACKEND_URL}/products`)
             .then(res => setProducts(res.data))
             .catch(err => console.error(err))
             .finally(() => setLoading(false))
