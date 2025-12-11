@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlmodel
+python-dotenv
+python-multipart
+requests
+google-generativeai
+# Optional RAG dependencies (can be commented out if C++ build tools are missing)
+# chromadb
+# sentence-transformers
