@@ -8,3 +8,4 @@ google-generativeai
 # Optional RAG dependencies (can be commented out if C++ build tools are missing)
 # chromadb
 # sentence-transformers
+psycopg2-binary
